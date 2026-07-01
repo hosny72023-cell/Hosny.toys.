@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شركة حسني لتجارة لعب الأطفال</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffffff,#f8f8f8);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+position:relative;
+}
+
+/* دوائر متحركة بالخلفية */
+body::before,
+body::after{
+content:"";
+position:absolute;
+border-radius:50%;
+background:rgba(214,0,0,.08);
+animation:move 10s infinite alternate ease-in-out;
+}
+
+body::before{
+width:250px;
+height:250px;
+top:-70px;
+right:-70px;
+}
+
+body::after{
+width:180px;
+height:180px;
+bottom:-50px;
+left:-50px;
+animation-duration:8s;
+}
+
+@keyframes move{
+from{
+transform:translateY(0) rotate(0deg);
+}
+to{
+transform:translateY(30px) rotate(20deg);
+}
+}
+
+.container{
+background:#fff;
+padding:45px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+text-align:center;
+max-width:650px;
+width:90%;
+animation:show 1s ease;
+}
+
+@keyframes show{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.logo{
+width:170px;
+margin-bottom:20px;
+animation:logo 1.2s ease;
+}
+
+@keyframes logo{
+from{
+opacity:0;
+transform:translateY(-80px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+color:#d60000;
+font-size:50px;
+margin-bottom:15px;
+animation:fade 1.5s;
+}
+
+h2{
+font-size:30px;
+margin-bottom:20px;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+color:#555;
+margin-bottom:35px;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+.btn{
+display:inline-block;
+padding:18px 40px;
+background:#d60000;
+color:rgb(255, 255, 255);
+text-decoration:none;
+border-radius:10px;
+font-size:22px;
+font-weight:bold;
+transition:.3s;
+animation:pulse 2s infinite;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 10px 30px rgba(214,0,0,.35);
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.05);
+}
+100%{
+transform:scale(1);
+}
+}
+
+footer{
+position:absolute;
+bottom:20px;
+font-size:15px;
+color:#888;
+width:100%;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo" alt="شعار الشركة">
+
+<h1>أهلاً وسهلاً بكم</h1>
+
+<h2>شركة حسني لتجارة لعب الأطفال والاستيراد</h2>
+
+<p>
+نرحب بكم في موقعنا الرسمي.<br>
+نسعد بتقديم أفضل منتجات لعب الأطفال بأعلى جودة وأسعار تنافسية.
+</p>
+
+<a href="home.html" class="btn">
+الدخول إلى أقسام المنتجات
+</a>
+
+</div>
+
+<footer>
+© جميع الحقوق محفوظة - شركة حسني
+</footer>
+
+</body>
+</html>
